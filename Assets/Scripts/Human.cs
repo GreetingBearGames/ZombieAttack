@@ -31,6 +31,10 @@ public class Humans {
         var humanCount = go.transform.parent.GetComponent<Human>().HumanList.Count();
         if(humanCount != 0){
             maxDist /=  humanCount;
+            if(this.go.transform.position.x < Target.position.x)
+                this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 0f, this.go.transform.eulerAngles.z);
+            if(this.go.transform.position.x > Target.position.x)
+                this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 180f, this.go.transform.eulerAngles.z);
             this.go.transform.position = Vector2.MoveTowards(this.go.transform.position, Target.position - new Vector3(a,a,0), maxDist);
         }
     }

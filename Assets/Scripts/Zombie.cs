@@ -26,6 +26,10 @@ public class Zombies {   //Zombies class is the parent class. This includes some
     public void TransformZombie(Transform Target) {  //Transforms a zombie from current pos to a target pos
         var maxDist = speed * Time.fixedDeltaTime;
         maxDist /=  go.transform.parent.GetComponent<Zombie>().ZombieList.Count();
+        if(this.go.transform.position.x < Target.position.x)
+            this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 0f, this.go.transform.eulerAngles.z);
+        if(this.go.transform.position.x > Target.position.x)
+            this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 180f, this.go.transform.eulerAngles.z);
         this.go.transform.position = Vector2.MoveTowards(this.go.transform.position, Target.position , maxDist);
     }
     public void animParams(bool idle, bool walk, bool damage, bool attack, bool death, Animator animator) {
@@ -96,6 +100,10 @@ public class Zombies {   //Zombies class is the parent class. This includes some
                         }
                         else{
                             joystickPlayerExample.Move();
+                            if(joystickPlayerExample.fixedJoystick.Direction.x < 0)
+                                this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 180f, this.go.transform.eulerAngles.z);
+                            else if(joystickPlayerExample.fixedJoystick.Direction.x > 0)
+                                this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 0f, this.go.transform.eulerAngles.z);
                         }
                         
                     }

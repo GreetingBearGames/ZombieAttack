@@ -22,7 +22,7 @@ public class KurtZombie : MonoBehaviour {
         Kurt.StateChanger("idle");
     }
 
-    void Update() {
+    void FixedUpdate() {
         Kurt.Move();
         Kurt.animParams(Kurt.idleState, Kurt.walkState, Kurt.damageState, Kurt.attackState, Kurt.deathState, animator);
     }

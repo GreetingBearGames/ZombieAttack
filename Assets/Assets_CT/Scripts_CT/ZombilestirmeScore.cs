@@ -18,9 +18,10 @@ public class ZombilestirmeScore : MonoBehaviour
 
     }
 
-    public void ScoreArttır(int value)
+    public void ScoreArttır(bool value)
     {
-        score = value;
+        if(value){}
+            score++;
         scoreValueText.text = score.ToString();
         PlayerPrefs.SetInt("MaxScore", score);
     }

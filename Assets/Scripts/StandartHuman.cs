@@ -19,11 +19,10 @@ public class StandartHuman : MonoBehaviour {
         Standart.tr = tr;
         Standart.hp = hp;
         Standart.zombie = GameObject.FindGameObjectWithTag("Zombie").GetComponent<Zombie>();
-        
         Standart.StateChanger("idle");
     }
 
-    void Update() {
+    void FixedUpdate(){
         Standart.Move();
         Standart.animParams(Standart.idleState, Standart.walkState, Standart.damageState, Standart.attackState, Standart.deathState, animator);
     }
@@ -34,7 +33,7 @@ public class StandartHuman : MonoBehaviour {
             GameObject gop;
             Vector3 BasePos = new Vector3(7, 0, 0);
             Vector3 xPos = new Vector3(BasePos.x, Random.Range(BasePos.y - 4, BasePos.y + 4), 0);
-            if(hum.HumanList.Count < zombieList.Count){
+            if(hum.HumanList.Count < zombieList.Count - 1 || (hum.HumanList.Count == 0 && zombieList.Count == 1)){
                 gop = Instantiate(hum.std, xPos, Quaternion.identity);
                 gop.transform.parent = hum.transform;
             }

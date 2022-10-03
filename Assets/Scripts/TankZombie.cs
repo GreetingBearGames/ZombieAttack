@@ -9,6 +9,7 @@ public class TankZombie : MonoBehaviour {
     [SerializeField]private GameObject go;
     [SerializeField]private Transform tr;
 
+
     void Start() {
         animator = gameObject.GetComponent<Animator>();
         Tank.speed = speed;
@@ -22,7 +23,7 @@ public class TankZombie : MonoBehaviour {
         Tank.StateChanger("idle");
     }
 
-    void Update() {
+    void FixedUpdate() {
         Tank.Move();
         Tank.animParams(Tank.idleState, Tank.walkState, Tank.damageState, Tank.attackState, Tank.deathState, animator);
     }

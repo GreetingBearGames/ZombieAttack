@@ -52,7 +52,7 @@ MonoBehaviour:
   attack: 6
   defence: 6
   range: 1
-  hp: 15
+  hp: 30
   go: {fileID: 753402045778010031}
   tr: {fileID: 753402045778010028}
 --- !u!95 &753402045778010026
@@ -153,5 +153,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c8e1e4cf5a543bb9b412b49ce5375e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieTarget: {x: 0, y: 0, z: 0}
+  zombieTarget: {x: 0, y: 0}
   isNewZombieCreated: 0

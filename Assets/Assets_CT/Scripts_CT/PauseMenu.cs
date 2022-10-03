@@ -18,7 +18,7 @@ public class PauseMenu : MonoBehaviour
         //------------------------Pause Window dışında bir yere basarsa window kapansın----------------------
         if (isGamePaused && Input.GetMouseButton(0))
         {
-            Vector3 mousePos = Input.mousePosition;
+            Vector2 mousePos = Input.mousePosition;
             if (!RectTransformUtility.RectangleContainsScreenPoint(pauseWindow.GetComponent<RectTransform>(), mousePos))
             {
                 Time.timeScale = 1;

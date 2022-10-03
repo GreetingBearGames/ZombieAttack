@@ -49,10 +49,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  attack: 6
+  attack: 9
   defence: 6
   range: 1
-  hp: 15
+  hp: 30
   flySpeed: 3
   go: {fileID: 2506134011609493660}
   tr: {fileID: 2506134011609493661}
@@ -154,5 +154,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c8e1e4cf5a543bb9b412b49ce5375e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieTarget: {x: 0, y: 0, z: 0}
+  zombieTarget: {x: 0, y: 0}
   isNewZombieCreated: 0

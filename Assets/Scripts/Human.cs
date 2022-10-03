@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Humans {
     public MainHP mainHP;
     public ZombilestirmeScore zombilestirmeScore;
     public ZombiEnvanteri zombiEnvanteri;
-    public float speed, defence, attack, range, hp = 10.0f;
-    public int deathNum = 0;
+    public float speed, defence, attack, range, hp;
     public bool idleState, walkState, deathState, attackState, damageState;
     public Transform tr;
     public GameObject go;
     public Zombie zombie;
-    public bool isGameOver,isnewDead = true;
+    public bool isGameOver, isnewDead = true;
     public float FindDistance(Transform a, Transform b) {
         float distance = Mathf.Sqrt(Mathf.Pow(b.position.x - a.position.x, 2) + Mathf.Pow(b.position.y - a.position.y, 2));
         return distance;
@@ -27,7 +27,12 @@ public class Humans {
         float a = 0f;
         if(go.tag == "RangedHuman")
             a = Mathf.Sqrt(Mathf.Pow(this.range, 2)/2);
-        this.go.transform.position = Vector3.MoveTowards(this.go.transform.position, Target.position - new Vector3(a,a,0), this.speed * Time.deltaTime);
+        var maxDist = speed * Time.fixedDeltaTime;
+        var humanCount = go.transform.parent.GetComponent<Human>().HumanList.Count();
+        if(humanCount != 0){
+            maxDist /=  humanCount;
+            this.go.transform.position = Vector2.MoveTowards(this.go.transform.position, Target.position - new Vector3(a,a,0), maxDist);
+        }
     }
     public GameObject GetClosestZombie(List<GameObject> li, GameObject zombie) {
         float min = float.MaxValue;
@@ -69,33 +74,53 @@ public class Humans {
                                 isGameOver = zombieTransform.gameObject.GetComponent<MainCharacterZombie>().Main.isGameOver;
                                 zombieTransform.gameObject.GetComponent<MainCharacterZombie>().Main.hp -= (this.attack)/(1/Time.deltaTime);
                                 zombieTransform.gameObject.GetComponent<MainCharacterZombie>().Main.mainHP.HpAzalt((this.attack)/(1/Time.deltaTime), isGameOver);
-                                zombieTransform.gameObject.GetComponent<MainCharacterZombie>().Main.damageState = true;
-                                zombieTransform.gameObject.GetComponent<MainCharacterZombie>().transform.parent.GetComponents<AudioSource>()[2].Play();
+                                //zombieTransform.gameObject.GetComponent<MainCharacterZombie>().Main.damageState = true;
+                                //zombieTransform.gameObject.GetComponent<MainCharacterZombie>().transform.parent.GetComponents<AudioSource>()[2].Play();
                                 if(hp <= 0 && isnewDead){
                                     zombieTransform.gameObject.GetComponent<MainCharacterZombie>().Main.zombiEnvanteri.StandartZombiEldeEt(1);
-                                    zombieTransform.gameObject.GetComponent<MainCharacterZombie>().Main.zombilestirmeScore.ScoreArttır(deathNum);
+                                    zombieTransform.gameObject.GetComponent<MainCharacterZombie>().Main.zombilestirmeScore.ScoreArttır(isnewDead);
                                     isnewDead = false;
                                 }
                                 break;
                             case "StandartZombie":
                                 zombieTransform.gameObject.GetComponent<StandartZombie>().Standart.hp -= (this.attack )/(1/Time.deltaTime);
-                                zombieTransform.gameObject.GetComponent<StandartZombie>().Standart.damageState = true;
-                                zombieTransform.gameObject.GetComponent<StandartZombie>().transform.parent.GetComponents<AudioSource>()[2].Play();
+                                if(hp <= 0  && isnewDead){
+                                    zombieTransform.gameObject.transform.parent.GetChild(0).GetComponent<MainCharacterZombie>().Main.zombiEnvanteri.StandartZombiEldeEt(1);
+                                    zombieTransform.gameObject.transform.parent.GetChild(0).GetComponent<MainCharacterZombie>().Main.zombilestirmeScore.ScoreArttır(isnewDead);
+                                    isnewDead = false;
+                                }
+                                //zombieTransform.gameObject.GetComponent<StandartZombie>().Standart.damageState = true;
+                                //zombieTransform.gameObject.GetComponent<StandartZombie>().transform.parent.GetComponents<AudioSource>()[2].Play();
                                 break;
                             case "TankZombie":
                                 zombieTransform.gameObject.GetComponent<TankZombie>().Tank.hp -= (this.attack)/(1/Time.deltaTime);
-                                zombieTransform.gameObject.GetComponent<TankZombie>().Tank.damageState = true;
-                                zombieTransform.gameObject.GetComponent<TankZombie>().transform.parent.GetComponents<AudioSource>()[2].Play();
+                                if(hp <= 0  && isnewDead){
+                                    zombieTransform.gameObject.transform.parent.GetChild(0).GetComponent<MainCharacterZombie>().Main.zombiEnvanteri.StandartZombiEldeEt(1);
+                                    zombieTransform.gameObject.transform.parent.GetChild(0).GetComponent<MainCharacterZombie>().Main.zombilestirmeScore.ScoreArttır(isnewDead);
+                                    isnewDead = false;
+                                }
+                                //zombieTransform.gameObject.GetComponent<TankZombie>().Tank.damageState = true;
+                                //zombieTransform.gameObject.GetComponent<TankZombie>().transform.parent.GetComponents<AudioSource>()[2].Play();
                                 break;
                             case "KargaliZombie":
                                 zombieTransform.gameObject.GetComponent<KargaliZombie>().Kargali.hp -= (this.attack)/(1/Time.deltaTime);
-                                zombieTransform.gameObject.GetComponent<KargaliZombie>().Kargali.damageState = true;
-                                zombieTransform.gameObject.GetComponent<KargaliZombie>().transform.parent.GetComponents<AudioSource>()[2].Play();
+                                if(hp <= 0  && isnewDead){
+                                    zombieTransform.gameObject.transform.parent.GetChild(0).GetComponent<MainCharacterZombie>().Main.zombiEnvanteri.StandartZombiEldeEt(1);
+                                    zombieTransform.gameObject.transform.parent.GetChild(0).GetComponent<MainCharacterZombie>().Main.zombilestirmeScore.ScoreArttır(isnewDead);
+                                    isnewDead = false;
+                                }
+                                //zombieTransform.gameObject.GetComponent<KargaliZombie>().Kargali.damageState = true;
+                                //zombieTransform.gameObject.GetComponent<KargaliZombie>().transform.parent.GetComponents<AudioSource>()[2].Play();
                                 break;
                             case "BalyozluZombie":
                                 zombieTransform.gameObject.GetComponent<BalyozluZombie>().Balyozlu.hp -= (this.attack)/(1/Time.deltaTime);
-                                zombieTransform.gameObject.GetComponent<BalyozluZombie>().Balyozlu.damageState = true;
-                                zombieTransform.gameObject.GetComponent<BalyozluZombie>().transform.parent.GetComponents<AudioSource>()[2].Play();
+                                if(hp <= 0  && isnewDead){
+                                    zombieTransform.gameObject.transform.parent.GetChild(0).GetComponent<MainCharacterZombie>().Main.zombiEnvanteri.StandartZombiEldeEt(1);
+                                    zombieTransform.gameObject.transform.parent.GetChild(0).GetComponent<MainCharacterZombie>().Main.zombilestirmeScore.ScoreArttır(isnewDead);
+                                    isnewDead = false;
+                                }
+                                //zombieTransform.gameObject.GetComponent<BalyozluZombie>().Balyozlu.damageState = true;
+                                //zombieTransform.gameObject.GetComponent<BalyozluZombie>().transform.parent.GetComponents<AudioSource>()[2].Play();
                                 break;
                             default:
                                 break;
@@ -120,7 +145,6 @@ public class Humans {
         if (hp <= 0) {
             StateChanger("death");
             go.transform.parent.GetComponents<AudioSource>()[3].Play();
-            deathNum++;
             return true;
         }
         return false;
@@ -208,6 +232,5 @@ public class Human : MonoBehaviour {
         HumanList = Utils.GetChildren(this.gameObject);
         standartHuman.StandartCreater();
         rangedHuman.RangedCreater();
-        
     }
 }

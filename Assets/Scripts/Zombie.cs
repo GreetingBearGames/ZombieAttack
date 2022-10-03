@@ -4,12 +4,13 @@ using UnityEngine;
 using System.Linq;
 
 public class Zombies {   //Zombies class is the parent class. This includes some common instances such as speed, defence etc.
-    public float speed, defence, attack, range, hp, vision = 10f;
+    public float speed, defence, attack, range, hp;
     public Transform tr;
     public GameObject go;
     public Human human;
     public MainHP mainHP;
     public ZombilestirmeScore zombilestirmeScore;
+    public JoystickPlayerExample joystickPlayerExample;
     public ZombiEnvanteri zombiEnvanteri;
     public bool idleState, walkState, deathState, attackState, damageState, isGameOver = false;
     public float FindDistance(Transform a, Transform b) {    //Finds the distance between two points a and b
@@ -23,11 +24,9 @@ public class Zombies {   //Zombies class is the parent class. This includes some
             return false;
     }
     public void TransformZombie(Transform Target) {  //Transforms a zombie from current pos to a target pos
-        if(go.tag == "MainCharacter"){
-            this.go.transform.position = Vector3.MoveTowards(this.go.transform.position, Target.position, this.speed * Time.deltaTime);
-        }
-        else
-            this.go.transform.position = Vector3.MoveTowards(this.go.transform.position, Target.position, this.speed * Time.deltaTime);
+        var maxDist = speed * Time.fixedDeltaTime;
+        maxDist /=  go.transform.parent.GetComponent<Zombie>().ZombieList.Count();
+        this.go.transform.position = Vector2.MoveTowards(this.go.transform.position, Target.position , maxDist);
     }
     public void animParams(bool idle, bool walk, bool damage, bool attack, bool death, Animator animator) {
         animator.SetBool("IsIdle", idle);
@@ -83,12 +82,12 @@ public class Zombies {   //Zombies class is the parent class. This includes some
 
                         if (humanTransform.gameObject.tag == "StandartHuman") {
                             humanTransform.gameObject.GetComponent<StandartHuman>().Standart.hp -= (this.attack) / (1 / Time.deltaTime);
-                            humanTransform.gameObject.GetComponent<StandartHuman>().Standart.damageState = true;
-                            humanTransform.gameObject.GetComponent<StandartHuman>().transform.parent.GetComponents<AudioSource>()[0].Play();
+                            //humanTransform.gameObject.GetComponent<StandartHuman>().Standart.damageState = true;
+                            //humanTransform.gameObject.GetComponent<StandartHuman>().transform.parent.GetComponents<AudioSource>()[0].Play();
                         } else if (humanTransform.gameObject.tag == "RangedHuman") {
                             humanTransform.gameObject.GetComponent<RangedHuman>().Ranged.hp -= (this.attack) / (1 / Time.deltaTime);
-                            humanTransform.gameObject.GetComponent<RangedHuman>().Ranged.damageState = true;
-                            humanTransform.gameObject.GetComponent<RangedHuman>().transform.parent.GetComponents<AudioSource>()[0].Play();
+                            //humanTransform.gameObject.GetComponent<RangedHuman>().Ranged.damageState = true;
+                            //humanTransform.gameObject.GetComponent<RangedHuman>().transform.parent.GetComponents<AudioSource>()[0].Play();
                         }
                     } else {
                         if(this.go.tag != "MainCharacter"){
@@ -96,7 +95,7 @@ public class Zombies {   //Zombies class is the parent class. This includes some
                             StateChanger("walk");
                         }
                         else{
-                            MainCharacterMove();
+                            joystickPlayerExample.Move();
                         }
                         
                     }
@@ -105,12 +104,8 @@ public class Zombies {   //Zombies class is the parent class. This includes some
         }
         CheckDead();
     }
-    public void MainCharacterMove(){
-        Vector2 moveDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        go.transform.Translate(moveDirection* speed* Time.deltaTime, Space.World);
-    }
+
     public bool CheckDead() {
-        Debug.Log(hp);
         if (hp <= 0) {
             go.transform.parent.GetComponents<AudioSource>()[6].Play();
             StateChanger("death");
@@ -204,7 +199,6 @@ public class Zombie : MonoBehaviour {
     private void Update() {
         ZombieList = Utils.GetChildren(this.gameObject);
         UpdateInventory();
-
     }
 
     public void UpdateInventory() {

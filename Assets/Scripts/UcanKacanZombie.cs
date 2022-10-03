@@ -9,6 +9,7 @@ public class UcanKacanZombie : MonoBehaviour {
     [SerializeField]private GameObject go;
     [SerializeField]private Transform tr;
 
+
     void Start() {
         animator = gameObject.GetComponent<Animator>();
         UcanKacan.speed = speed;
@@ -22,7 +23,7 @@ public class UcanKacanZombie : MonoBehaviour {
         UcanKacan.StateChanger("idle");
     }
 
-    void Update() {
+    void FixedUpdate() {
         UcanKacan.Move();
         UcanKacan.animParams(UcanKacan.idleState, UcanKacan.walkState, UcanKacan.damageState, UcanKacan.attackState, UcanKacan.deathState, animator);
     }

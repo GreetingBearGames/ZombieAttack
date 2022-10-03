@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class ClickAndDrag : MonoBehaviour, IDragHandler, IEndDragHandler {
     private GameObject zombidogurmaAlani;
-    public Vector3 zombieTarget;
+    public Vector2 zombieTarget;
     public bool isNewZombieCreated = false;
 
     private void Start() {
@@ -13,7 +13,7 @@ public class ClickAndDrag : MonoBehaviour, IDragHandler, IEndDragHandler {
     }
 
     public void OnDrag(PointerEventData eventData) {
-        Vector3 suruklemePozisyonu = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0);
+        Vector2 suruklemePozisyonu = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
 
         bool alanIcınemiBirakti = RectTransformUtility.RectangleContainsScreenPoint(zombidogurmaAlani.GetComponent<RectTransform>(), eventData.position);
         if (alanIcınemiBirakti) {
@@ -46,9 +46,9 @@ public class ClickAndDrag : MonoBehaviour, IDragHandler, IEndDragHandler {
                 speed = 0;
                 break;
         }
-        Vector3 BasePos = new Vector3(-7, 0, 0);
-        Vector3 xPos = new Vector3(BasePos.x, Random.Range(BasePos.y - 4, BasePos.y + 4), 0);
+        Vector2 BasePos = new Vector2(-7, 0);
+        Vector2 xPos = new Vector2(BasePos.x, Random.Range(BasePos.y - 4, BasePos.y + 4));
         transform.position = xPos;
-        transform.position = Vector3.MoveTowards(xPos, zombieTarget, speed * Time.deltaTime);
+        //transform.position = Vector2.MoveTowards(xPos, zombieTarget,Time.deltaTime);
     }
 }

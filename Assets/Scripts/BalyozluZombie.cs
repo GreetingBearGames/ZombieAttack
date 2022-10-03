@@ -10,6 +10,7 @@ public class BalyozluZombie : MonoBehaviour {
     [SerializeField]private Transform tr;
 
     void Start() {
+
         animator = gameObject.GetComponent<Animator>();
         Balyozlu.speed = speed;
         Balyozlu.attack = attack;
@@ -22,7 +23,7 @@ public class BalyozluZombie : MonoBehaviour {
         Balyozlu.StateChanger("idle");
     }
 
-    void Update() {
+    void FixedUpdate() {
         Balyozlu.Move();
         Balyozlu.animParams(Balyozlu.idleState, Balyozlu.walkState, Balyozlu.damageState, Balyozlu.attackState, Balyozlu.deathState, animator);
     }

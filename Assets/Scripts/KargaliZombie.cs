@@ -10,6 +10,7 @@ public class KargaliZombie : MonoBehaviour {
     [SerializeField]private Transform tr;
     bool isFlying;
 
+
     void Start() {
         isFlying = true;
         animator = gameObject.GetComponent<Animator>();
@@ -30,7 +31,7 @@ public class KargaliZombie : MonoBehaviour {
         Kargali.human = GameObject.FindGameObjectWithTag("Human").GetComponent<Human>();   //To access human script;
     }
 
-    void Update() {
+    void FixedUpdate() {
         if(isFlying){
             StartCoroutine(startFly());
         }

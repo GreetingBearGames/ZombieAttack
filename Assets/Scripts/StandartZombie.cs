@@ -10,7 +10,9 @@ public class StandartZombie : MonoBehaviour {
     [SerializeField]private GameObject go;
     [SerializeField]private Transform tr;
 
+
     void Start() {
+
         animator = gameObject.GetComponent<Animator>();
         Standart.speed = speed;
         Standart.attack = attack;
@@ -23,7 +25,7 @@ public class StandartZombie : MonoBehaviour {
         Standart.StateChanger("idle");
     }
 
-    void Update() {
+    void FixedUpdate() {
         Standart.Move();
         Standart.animParams(Standart.idleState, Standart.walkState, Standart.damageState, Standart.attackState, Standart.deathState, animator);
     }

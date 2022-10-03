@@ -6,6 +6,7 @@ public class MainCharacterZombie : MonoBehaviour {
     public MainHP mainHP;
     public ZombilestirmeScore zombilestirmeScore;
     public ZombiEnvanteri zombiEnvanteri;
+    public JoystickPlayerExample joystickPlayerExample;
     Animator animator;
     public Zombies Main = new Zombies();
     public float speed, attack, defence, range, hp;
@@ -16,6 +17,7 @@ public class MainCharacterZombie : MonoBehaviour {
         Main.mainHP = mainHP;
         Main.zombilestirmeScore = zombilestirmeScore;
         Main.zombiEnvanteri = zombiEnvanteri;
+        Main.joystickPlayerExample = joystickPlayerExample;
         animator = gameObject.GetComponent<Animator>();
         Main.speed = speed;
         Main.attack = attack;
@@ -28,7 +30,7 @@ public class MainCharacterZombie : MonoBehaviour {
         Main.StateChanger("idle");
     }
 
-    void Update() {
+    void FixedUpdate() {
         Main.Move();
         Main.animParams(Main.idleState, Main.walkState, Main.damageState, Main.attackState, Main.deathState, animator);
     }

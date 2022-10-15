@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1662
+        width: 1652
         height: 1364
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.hasaralma_1"
       rect:
         serializedVersion: 2
-        x: 1662
+        x: 1652
         y: 1
         width: 1664
         height: 1363
@@ -161,7 +161,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.hasaralma_2"
       rect:
         serializedVersion: 2
-        x: 3326
+        x: 3316
         y: 0
         width: 1664
         height: 1364
@@ -182,7 +182,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.hasaralma_3"
       rect:
         serializedVersion: 2
-        x: 4994
+        x: 4984
         y: 0
         width: 1649
         height: 1364
@@ -203,7 +203,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.hasaralma_4"
       rect:
         serializedVersion: 2
-        x: 6645
+        x: 6635
         y: 0
         width: 1673
         height: 1364
@@ -224,7 +224,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.hasaralma_5"
       rect:
         serializedVersion: 2
-        x: 8322
+        x: 8312
         y: 0
         width: 1664
         height: 1364
@@ -245,7 +245,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.hasaralma_6"
       rect:
         serializedVersion: 2
-        x: 9988
+        x: 9978
         y: 0
         width: 1658
         height: 1364
@@ -266,7 +266,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.hasaralma_7"
       rect:
         serializedVersion: 2
-        x: 11644
+        x: 11634
         y: 0
         width: 1687
         height: 1364

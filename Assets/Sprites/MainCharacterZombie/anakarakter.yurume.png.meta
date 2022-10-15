@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1150.125
+        width: 1140
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: anakarakter.yurume_1
       rect:
         serializedVersion: 2
-        x: 1150
+        x: 1140
         y: 0
-        width: 1150.125
+        width: 1150
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: anakarakter.yurume_2
       rect:
         serializedVersion: 2
-        x: 2300
+        x: 2290
         y: 0
-        width: 1150.125
+        width: 1150
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: anakarakter.yurume_3
       rect:
         serializedVersion: 2
-        x: 3450
+        x: 3440
         y: 0
-        width: 1150.125
+        width: 1150
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: anakarakter.yurume_4
       rect:
         serializedVersion: 2
-        x: 4600
+        x: 4590
         y: 0
-        width: 1150.125
+        width: 1150
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: anakarakter.yurume_5
       rect:
         serializedVersion: 2
-        x: 5750
+        x: 5740
         y: 0
-        width: 1150.125
+        width: 1150
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: anakarakter.yurume_6
       rect:
         serializedVersion: 2
-        x: 6900
+        x: 6890
         y: 0
-        width: 1150.125
+        width: 1150
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: anakarakter.yurume_7
       rect:
         serializedVersion: 2
-        x: 8050
+        x: 8040
         y: 0
-        width: 1150.125
+        width: 1150
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

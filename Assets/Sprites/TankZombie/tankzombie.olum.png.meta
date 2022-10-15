@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1526
+        width: 1516
         height: 1240
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: tankzombie.olum_1
       rect:
         serializedVersion: 2
-        x: 1529
+        x: 1519
         y: 1
         width: 1540
         height: 1239
@@ -161,7 +161,7 @@ TextureImporter:
       name: tankzombie.olum_2
       rect:
         serializedVersion: 2
-        x: 3071
+        x: 3061
         y: 0
         width: 1537
         height: 1240
@@ -182,7 +182,7 @@ TextureImporter:
       name: tankzombie.olum_3
       rect:
         serializedVersion: 2
-        x: 4611
+        x: 4607
         y: 1
         width: 1544
         height: 1239
@@ -203,7 +203,7 @@ TextureImporter:
       name: tankzombie.olum_4
       rect:
         serializedVersion: 2
-        x: 6158
+        x: 6148
         y: 0
         width: 1548
         height: 1240

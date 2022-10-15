@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1577
+        width: 1567
         height: 1242
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.yurume_1"
       rect:
         serializedVersion: 2
-        x: 1575
+        x: 1567
         y: 0
         width: 1585
         height: 1242
@@ -161,7 +161,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.yurume_2"
       rect:
         serializedVersion: 2
-        x: 3161
+        x: 3151
         y: 1
         width: 1593
         height: 1241
@@ -182,7 +182,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.yurume_3"
       rect:
         serializedVersion: 2
-        x: 4754
+        x: 4744
         y: 0
         width: 1584
         height: 1242
@@ -203,7 +203,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.yurume_4"
       rect:
         serializedVersion: 2
-        x: 6342
+        x: 6332
         y: 0
         width: 1586
         height: 1242
@@ -224,7 +224,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.yurume_5"
       rect:
         serializedVersion: 2
-        x: 7928
+        x: 7918
         y: 0
         width: 1586
         height: 1242
@@ -245,7 +245,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.yurume_6"
       rect:
         serializedVersion: 2
-        x: 9515
+        x: 9505
         y: 0
         width: 1594
         height: 1242

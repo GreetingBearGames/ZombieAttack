@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1433.2858
+        width: 1425
         height: 1255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: balonluzombie.yurume_1
       rect:
         serializedVersion: 2
-        x: 1433
+        x: 1425
         y: 0
-        width: 1433.2858
+        width: 1433
         height: 1255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: balonluzombie.yurume_2
       rect:
         serializedVersion: 2
-        x: 2866
+        x: 2858
         y: 0
-        width: 1433.2858
+        width: 1433
         height: 1255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: balonluzombie.yurume_3
       rect:
         serializedVersion: 2
-        x: 4299
+        x: 4291
         y: 0
-        width: 1433.2858
+        width: 1433
         height: 1255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: balonluzombie.yurume_4
       rect:
         serializedVersion: 2
-        x: 5732
+        x: 5724
         y: 0
-        width: 1433.2858
+        width: 1433
         height: 1255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: balonluzombie.yurume_5
       rect:
         serializedVersion: 2
-        x: 7165
+        x: 7157
         y: 0
-        width: 1433.2858
+        width: 1433
         height: 1255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: balonluzombie.yurume_6
       rect:
         serializedVersion: 2
-        x: 8598
+        x: 8590
         y: 0
-        width: 1433.2858
+        width: 1433
         height: 1255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

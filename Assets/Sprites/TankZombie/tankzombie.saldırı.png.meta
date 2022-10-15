@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1757
+        width: 1747
         height: 1312
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: "tankzombie.sald\u0131r\u0131_1"
       rect:
         serializedVersion: 2
-        x: 1757
+        x: 1747
         y: 0
         width: 1756
         height: 1312
@@ -161,7 +161,7 @@ TextureImporter:
       name: "tankzombie.sald\u0131r\u0131_2"
       rect:
         serializedVersion: 2
-        x: 3516
+        x: 3506
         y: 6
         width: 1770
         height: 1306
@@ -182,7 +182,7 @@ TextureImporter:
       name: "tankzombie.sald\u0131r\u0131_3"
       rect:
         serializedVersion: 2
-        x: 5283
+        x: 5273
         y: 0
         width: 1761
         height: 1312
@@ -224,7 +224,7 @@ TextureImporter:
       name: "tankzombie.sald\u0131r\u0131_5"
       rect:
         serializedVersion: 2
-        x: 8810
+        x: 8800
         y: 0
         width: 1767
         height: 1312
@@ -245,7 +245,7 @@ TextureImporter:
       name: "tankzombie.sald\u0131r\u0131_6"
       rect:
         serializedVersion: 2
-        x: 10578
+        x: 10568
         y: 0
         width: 1773
         height: 1312
@@ -266,7 +266,7 @@ TextureImporter:
       name: "tankzombie.sald\u0131r\u0131_7"
       rect:
         serializedVersion: 2
-        x: 12354
+        x: 12344
         y: 0
         width: 1774
         height: 1312

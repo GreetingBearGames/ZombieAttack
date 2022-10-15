@@ -48,11 +48,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9273ef205836c2d4a8ca70ddec3bbb25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attack: 3
+  attack: 6
   defence: 6
-  speed: 1
+  speed: 1.5
   range: 1
-  hp: 10
+  hp: 15
   go: {fileID: 2216230045558144320}
   tr: {fileID: 2216230045558144321}
 --- !u!64 &2216230045558144325

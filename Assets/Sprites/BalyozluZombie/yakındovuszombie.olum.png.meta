@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2287.8
+        width: 2277
         height: 1309
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.olum_1"
       rect:
         serializedVersion: 2
-        x: 2275
+        x: 2277
         y: 0
-        width: 2295
+        width: 2288
         height: 1309
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.olum_2"
       rect:
         serializedVersion: 2
-        x: 4571
+        x: 4564
         y: 0
         width: 2288
         height: 1309
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.olum_3"
       rect:
         serializedVersion: 2
-        x: 6861
+        x: 6851
         y: 0
-        width: 2287.8
+        width: 2288
         height: 1309
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.olum_4"
       rect:
         serializedVersion: 2
-        x: 9148
+        x: 9138
         y: 0
-        width: 2287.8
+        width: 1
         height: 1309
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

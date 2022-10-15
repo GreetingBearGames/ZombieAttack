@@ -52,8 +52,8 @@ MonoBehaviour:
   attack: 9
   defence: 6
   range: 1
-  hp: 30
-  flySpeed: 3
+  hp: 45
+  flySpeed: 5
   go: {fileID: 2506134011609493660}
   tr: {fileID: 2506134011609493661}
 --- !u!95 &2506134011609493663

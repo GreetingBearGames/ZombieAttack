@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1462
+        width: 1452
         height: 1282
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: tankzombie.yurume_1
       rect:
         serializedVersion: 2
-        x: 1465
+        x: 1455
         y: 0
         width: 1469
         height: 1282
@@ -161,7 +161,7 @@ TextureImporter:
       name: tankzombie.yurume_2
       rect:
         serializedVersion: 2
-        x: 2934
+        x: 2924
         y: 1
         width: 1491
         height: 1281
@@ -182,7 +182,7 @@ TextureImporter:
       name: tankzombie.yurume_3
       rect:
         serializedVersion: 2
-        x: 4421
+        x: 4411
         y: 0
         width: 1476
         height: 1282
@@ -203,7 +203,7 @@ TextureImporter:
       name: tankzombie.yurume_4
       rect:
         serializedVersion: 2
-        x: 5897
+        x: 5887
         y: 0
         width: 1484
         height: 1282
@@ -224,7 +224,7 @@ TextureImporter:
       name: tankzombie.yurume_5
       rect:
         serializedVersion: 2
-        x: 7377
+        x: 7367
         y: 0
         width: 1487
         height: 1282
@@ -245,7 +245,7 @@ TextureImporter:
       name: tankzombie.yurume_6
       rect:
         serializedVersion: 2
-        x: 8864
+        x: 8854
         y: 0
         width: 1476
         height: 1282
@@ -266,7 +266,7 @@ TextureImporter:
       name: tankzombie.yurume_7
       rect:
         serializedVersion: 2
-        x: 10340
+        x: 10330
         y: 0
         width: 1481
         height: 1282

@@ -21,11 +21,14 @@ public class StandartZombie : MonoBehaviour {
         Standart.go = go;
         Standart.tr = tr;
         Standart.hp = hp;
+        Standart.aura = false;
         Standart.human = GameObject.FindGameObjectWithTag("Human").GetComponent<Human>();   //To access human script;
         Standart.StateChanger("idle");
+        Standart.screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
     void FixedUpdate() {
+        Debug.Log(Standart.attack);
         Standart.Move();
         Standart.animParams(Standart.idleState, Standart.walkState, Standart.damageState, Standart.attackState, Standart.deathState, animator);
     }

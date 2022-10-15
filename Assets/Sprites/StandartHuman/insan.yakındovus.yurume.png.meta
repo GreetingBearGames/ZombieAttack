@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1445.8334
+        width: 1418
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -137,78 +137,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "insan.yak\u0131ndovus.yurume_1"
-      rect:
-        serializedVersion: 2
-        x: 1445
-        y: 0
-        width: 1445.8334
-        height: 1240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 067c17813f748524fafeac15a7314f5e
-      internalID: -46644350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "insan.yak\u0131ndovus.yurume_2"
-      rect:
-        serializedVersion: 2
-        x: 2890
-        y: 0
-        width: 1445.8334
-        height: 1240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0933dfe5170bb944a43e29b58d7c116
-      internalID: 2125033997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "insan.yak\u0131ndovus.yurume_3"
-      rect:
-        serializedVersion: 2
-        x: 4335
-        y: 0
-        width: 1445.8334
-        height: 1240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf1bd1aab8340c9469870ea445829dfe
-      internalID: 785486077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: "insan.yak\u0131ndovus.yurume_4"
       rect:
         serializedVersion: 2
-        x: 5780
+        x: 5761
         y: 0
-        width: 1445.8334
+        width: 1446
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,21 +158,84 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "insan.yak\u0131ndovus.yurume_5"
+      name: "insan.yak\u0131ndovus.yurume_1"
       rect:
         serializedVersion: 2
-        x: 7225
+        x: 1418
         y: 0
-        width: 1445.8334
+        width: 1446
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fe2b3ebf15302f4aa15925edce2f80d
+      spriteID: 05950ad20d312264ab6a25a04213fab6
+      internalID: -46644350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "insan.yak\u0131ndovus.yurume_2"
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 0
+        width: 1446
+        height: 1240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39971bc21d4b27a49a41598da5f3830f
+      internalID: 2125033997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "insan.yak\u0131ndovus.yurume_3"
+      rect:
+        serializedVersion: 2
+        x: 4314
+        y: 0
+        width: 1446
+        height: 1240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db07ab7d70e68ef468ab94f2d6940374
+      internalID: 785486077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "insan.yak\u0131ndovus.yurume_5"
+      rect:
+        serializedVersion: 2
+        x: 7207
+        y: 0
+        width: 1446
+        height: 1240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d801da6e5f9fb0a4c863ccad3e6ac31a
       internalID: -284447118
       vertices: []
       indices: 

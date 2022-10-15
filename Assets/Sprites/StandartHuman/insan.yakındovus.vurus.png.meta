@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1341.625
+        width: 1332
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.vurus_1"
       rect:
         serializedVersion: 2
-        x: 1341
+        x: 1331
         y: 0
-        width: 1341.625
+        width: 1342
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.vurus_2"
       rect:
         serializedVersion: 2
-        x: 2682
+        x: 2672
         y: 0
-        width: 1341.625
+        width: 1342
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.vurus_3"
       rect:
         serializedVersion: 2
-        x: 4023
+        x: 4013
         y: 0
-        width: 1341.625
+        width: 1342
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.vurus_4"
       rect:
         serializedVersion: 2
-        x: 5364
+        x: 5354
         y: 0
-        width: 1341.625
+        width: 1342
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.vurus_5"
       rect:
         serializedVersion: 2
-        x: 6705
+        x: 6695
         y: 0
-        width: 1341.625
+        width: 1342
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.vurus_6"
       rect:
         serializedVersion: 2
-        x: 8046
+        x: 8036
         y: 0
-        width: 1341.625
+        width: 1342
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.vurus_7"
       rect:
         serializedVersion: 2
-        x: 9387
+        x: 9377
         y: 0
-        width: 1341.625
+        width: 1342
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

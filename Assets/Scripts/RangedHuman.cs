@@ -19,23 +19,11 @@ public class RangedHuman : MonoBehaviour {
         Ranged.hp = hp;
         Ranged.zombie = GameObject.FindGameObjectWithTag("Zombie").GetComponent<Zombie>();
         Ranged.StateChanger("idle");
+        Ranged.screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
     void FixedUpdate() {
         Ranged.Move();
         Ranged.animParams(Ranged.idleState, Ranged.walkState, Ranged.damageState, Ranged.attackState, Ranged.deathState, animator);
-    }
-    public void RangedCreater(){
-        if(Ranged.picker()){
-            var hum = GameObject.FindGameObjectWithTag("Human").GetComponent<Human>();
-            var zombieList = GameObject.FindGameObjectWithTag("Zombie").GetComponent<Zombie>().ZombieList;
-            GameObject gop;
-            Vector2 BasePos = new Vector2(7, 0);
-            Vector2 xPos = new Vector2(BasePos.x, Random.Range(BasePos.y - 4, BasePos.y + 4));
-            if(hum.HumanList.Count < zombieList.Count - 1 || (hum.HumanList.Count == 0 && zombieList.Count == 1)){
-                gop = Instantiate(hum.std, xPos, Quaternion.identity);
-                gop.transform.parent = hum.transform;
-            }
-        }
     }
 }

@@ -19,8 +19,10 @@ public class UcanKacanZombie : MonoBehaviour {
         UcanKacan.go = go;
         UcanKacan.tr = tr;
         UcanKacan.hp = hp;
+        UcanKacan.aura = false;
         UcanKacan.human = GameObject.FindGameObjectWithTag("Human").GetComponent<Human>();   //To access human script;
         UcanKacan.StateChanger("idle");
+        UcanKacan.screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
     void FixedUpdate() {

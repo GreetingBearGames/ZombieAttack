@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1712
+        width: 1702
         height: 915
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.sald\u0131r\u0131_1"
       rect:
         serializedVersion: 2
-        x: 1714
+        x: 1702
         y: 0
         width: 1716
         height: 915
@@ -161,7 +161,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.sald\u0131r\u0131_2"
       rect:
         serializedVersion: 2
-        x: 3430
+        x: 3420
         y: 0
         width: 1709
         height: 915
@@ -182,7 +182,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.sald\u0131r\u0131_3"
       rect:
         serializedVersion: 2
-        x: 5139
+        x: 5129
         y: 0
         width: 1723
         height: 915
@@ -203,7 +203,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.sald\u0131r\u0131_4"
       rect:
         serializedVersion: 2
-        x: 6862
+        x: 6852
         y: 0
         width: 1708
         height: 915
@@ -224,7 +224,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.sald\u0131r\u0131_5"
       rect:
         serializedVersion: 2
-        x: 8572
+        x: 8562
         y: 0
         width: 1716
         height: 915
@@ -245,7 +245,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.sald\u0131r\u0131_6"
       rect:
         serializedVersion: 2
-        x: 10289
+        x: 10279
         y: 0
         width: 1722
         height: 915
@@ -266,7 +266,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.sald\u0131r\u0131_7"
       rect:
         serializedVersion: 2
-        x: 12011
+        x: 12001
         y: 0
         width: 1726
         height: 915

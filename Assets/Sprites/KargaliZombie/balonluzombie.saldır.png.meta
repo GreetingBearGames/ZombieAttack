@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1261
+        width: 1251
         height: 957
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_1"
       rect:
         serializedVersion: 2
-        x: 1259
+        x: 1251
         y: 0
         width: 1276
         height: 957
@@ -161,7 +161,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_2"
       rect:
         serializedVersion: 2
-        x: 2535
+        x: 2527
         y: 1
         width: 1272
         height: 956
@@ -182,7 +182,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_3"
       rect:
         serializedVersion: 2
-        x: 3807
+        x: 3799
         y: 0
         width: 1267
         height: 957
@@ -203,7 +203,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_4"
       rect:
         serializedVersion: 2
-        x: 5074
+        x: 5066
         y: 0
         width: 1262
         height: 957
@@ -224,7 +224,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_5"
       rect:
         serializedVersion: 2
-        x: 6337
+        x: 6327
         y: 0
         width: 1277
         height: 957
@@ -245,7 +245,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_6"
       rect:
         serializedVersion: 2
-        x: 7614
+        x: 7604
         y: 0
         width: 1261
         height: 957
@@ -266,7 +266,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_7"
       rect:
         serializedVersion: 2
-        x: 8875
+        x: 8866
         y: 0
         width: 1269
         height: 957
@@ -287,7 +287,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_8"
       rect:
         serializedVersion: 2
-        x: 10143
+        x: 10134
         y: 0
         width: 1278
         height: 957
@@ -308,7 +308,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_9"
       rect:
         serializedVersion: 2
-        x: 11421
+        x: 11412
         y: 2
         width: 1266
         height: 955
@@ -329,7 +329,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_10"
       rect:
         serializedVersion: 2
-        x: 12687
+        x: 12678
         y: 0
         width: 1266
         height: 957
@@ -350,7 +350,7 @@ TextureImporter:
       name: "balonluzombie.sald\u0131r_11"
       rect:
         serializedVersion: 2
-        x: 13954
+        x: 13945
         y: 0
         width: 1274
         height: 957

@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1976
+        width: 1966
         height: 1346
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: tankzombie.hasaralma_1
       rect:
         serializedVersion: 2
-        x: 1979
+        x: 1969
         y: 0
         width: 2001
         height: 1346
@@ -161,7 +161,7 @@ TextureImporter:
       name: tankzombie.hasaralma_2
       rect:
         serializedVersion: 2
-        x: 3983
+        x: 3973
         y: 0
         width: 1998
         height: 1346
@@ -182,7 +182,7 @@ TextureImporter:
       name: tankzombie.hasaralma_3
       rect:
         serializedVersion: 2
-        x: 5984
+        x: 5974
         y: 0
         width: 1998
         height: 1346
@@ -203,7 +203,7 @@ TextureImporter:
       name: tankzombie.hasaralma_4
       rect:
         serializedVersion: 2
-        x: 7985
+        x: 7987
         y: 0
         width: 1991
         height: 1346
@@ -224,7 +224,7 @@ TextureImporter:
       name: tankzombie.hasaralma_5
       rect:
         serializedVersion: 2
-        x: 9982
+        x: 9972
         y: 0
         width: 1998
         height: 1346
@@ -245,7 +245,7 @@ TextureImporter:
       name: tankzombie.hasaralma_6
       rect:
         serializedVersion: 2
-        x: 11983
+        x: 11973
         y: 0
         width: 1997
         height: 1346
@@ -266,7 +266,7 @@ TextureImporter:
       name: tankzombie.hasaralma_7
       rect:
         serializedVersion: 2
-        x: 13980
+        x: 13970
         y: 0
         width: 2020
         height: 1346

@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1279.125
+        width: 1269
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: basiczombie.hasaralma_1
       rect:
         serializedVersion: 2
-        x: 1279
+        x: 1269
         y: 0
-        width: 1279.125
+        width: 1279
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: basiczombie.hasaralma_2
       rect:
         serializedVersion: 2
-        x: 2558
+        x: 2548
         y: 0
-        width: 1279.125
+        width: 1279
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: basiczombie.hasaralma_3
       rect:
         serializedVersion: 2
-        x: 3837
+        x: 3827
         y: 0
-        width: 1279.125
+        width: 1279
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: basiczombie.hasaralma_4
       rect:
         serializedVersion: 2
-        x: 5116
+        x: 5106
         y: 0
-        width: 1279.125
+        width: 1279
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: basiczombie.hasaralma_5
       rect:
         serializedVersion: 2
-        x: 6395
+        x: 6385
         y: 0
-        width: 1279.125
+        width: 1279
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: basiczombie.hasaralma_6
       rect:
         serializedVersion: 2
-        x: 7674
+        x: 7664
         y: 0
-        width: 1279.125
+        width: 1279
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: basiczombie.hasaralma_7
       rect:
         serializedVersion: 2
-        x: 8953
+        x: 8943
         y: 0
-        width: 1279.125
+        width: 1279
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

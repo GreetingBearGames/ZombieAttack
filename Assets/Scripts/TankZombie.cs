@@ -19,8 +19,10 @@ public class TankZombie : MonoBehaviour {
         Tank.go = go;
         Tank.tr = tr;
         Tank.hp = hp;
+        Tank.aura = false;
         Tank.human = GameObject.FindGameObjectWithTag("Human").GetComponent<Human>();   //To access human script;
         Tank.StateChanger("idle");
+        Tank.screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
     void FixedUpdate() {

@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class JoystickPlayerExample : MonoBehaviour
 {
-    public float speed;
     public FixedJoystick fixedJoystick;
-
     public void FixedUpdate()
     {
         
     }
-    public void Move(){
+    public void Move(float speed){
         Vector2 direction = Vector2.up * fixedJoystick.Vertical + Vector2.right * fixedJoystick.Horizontal;
-        transform.Translate(direction* speed* Time.deltaTime, Space.World);
+        transform.Translate(direction * speed, Space.World);
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class ClickAndDrag : MonoBehaviour, IDragHandler, IEndDragHandler {
     private GameObject zombidogurmaAlani;
     public Vector2 zombieTarget;
+    public static Vector2 target;
     public bool isNewZombieCreated = false;
 
     private void Start() {
@@ -25,6 +26,7 @@ public class ClickAndDrag : MonoBehaviour, IDragHandler, IEndDragHandler {
         isNewZombieCreated = true;
         zombidogurmaAlani.SetActive(false);
         zombieTarget = transform.position;
+        target = zombieTarget;
         SendToBaseZombie();
     }
     public void SendToBaseZombie() {

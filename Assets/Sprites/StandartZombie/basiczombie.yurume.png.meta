@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1191.7142
+        width: 1182
         height: 1240
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,9 +140,9 @@ TextureImporter:
       name: basiczombie.yurume_1
       rect:
         serializedVersion: 2
-        x: 1191
+        x: 1182
         y: 0
-        width: 1191.7142
+        width: 1192
         height: 1240
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -161,9 +161,9 @@ TextureImporter:
       name: basiczombie.yurume_2
       rect:
         serializedVersion: 2
-        x: 2382
+        x: 2372
         y: 0
-        width: 1191.7142
+        width: 1192
         height: 1240
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -182,9 +182,9 @@ TextureImporter:
       name: basiczombie.yurume_3
       rect:
         serializedVersion: 2
-        x: 3573
+        x: 3564
         y: 0
-        width: 1191.7142
+        width: 1192
         height: 1240
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -203,9 +203,9 @@ TextureImporter:
       name: basiczombie.yurume_4
       rect:
         serializedVersion: 2
-        x: 4764
+        x: 4754
         y: 0
-        width: 1191.7142
+        width: 1192
         height: 1240
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -224,9 +224,9 @@ TextureImporter:
       name: basiczombie.yurume_5
       rect:
         serializedVersion: 2
-        x: 5955
+        x: 5945
         y: 0
-        width: 1191.7142
+        width: 1192
         height: 1240
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -245,9 +245,9 @@ TextureImporter:
       name: basiczombie.yurume_6
       rect:
         serializedVersion: 2
-        x: 7146
+        x: 7136
         y: 0
-        width: 1191.7142
+        width: 1192
         height: 1240
       alignment: 0
       pivot: {x: 0, y: 0}

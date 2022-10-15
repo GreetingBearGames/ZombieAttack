@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1801
+        width: 1795
         height: 1352
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.yurume_1"
       rect:
         serializedVersion: 2
-        x: 1801
+        x: 1795
         y: 0
         width: 1805
         height: 1352
@@ -161,7 +161,7 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.yurume_2"
       rect:
         serializedVersion: 2
-        x: 3607
+        x: 3601
         y: 0
         width: 1806
         height: 1352
@@ -182,7 +182,7 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.yurume_3"
       rect:
         serializedVersion: 2
-        x: 5414
+        x: 5408
         y: 0
         width: 1809
         height: 1352
@@ -203,7 +203,7 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.yurume_4"
       rect:
         serializedVersion: 2
-        x: 7224
+        x: 7218
         y: 0
         width: 1802
         height: 1352
@@ -224,7 +224,7 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.yurume_5"
       rect:
         serializedVersion: 2
-        x: 9026
+        x: 9020
         y: 0
         width: 1806
         height: 1352
@@ -245,7 +245,7 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.yurume_6"
       rect:
         serializedVersion: 2
-        x: 10833
+        x: 10827
         y: 0
         width: 1806
         height: 1352

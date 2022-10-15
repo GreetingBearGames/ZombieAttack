@@ -8,7 +8,7 @@ public class ZombiEnvanteri : MonoBehaviour
 {
     private int[] zombiSayisi = new int[4];
     [SerializeField] GameObject[] zombiler = new GameObject[4];
-    private int[] zombiFiyatlari = { 1, 3, 5, 7 };
+    private int[] zombiFiyatlari = { 1, 5, 5, 3 };
     private GameObject[] zombiSayisiniTutanObje = new GameObject[4];
 
     private GameObject[] zombiButonu = new GameObject[4];

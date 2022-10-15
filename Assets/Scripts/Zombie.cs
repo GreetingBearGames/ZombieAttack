@@ -5,6 +5,8 @@ using System.Linq;
 
 public class Zombies {   //Zombies class is the parent class. This includes some common instances such as speed, defence etc.
     public float speed, defence, attack, range, hp;
+    public Vector2 screenBounds;
+    public Vector3 viewPos;
     public Transform tr;
     public GameObject go;
     public Human human;
@@ -12,7 +14,7 @@ public class Zombies {   //Zombies class is the parent class. This includes some
     public ZombilestirmeScore zombilestirmeScore;
     public JoystickPlayerExample joystickPlayerExample;
     public ZombiEnvanteri zombiEnvanteri;
-    public bool idleState, walkState, deathState, attackState, damageState, isGameOver = false;
+    public bool idleState, walkState, deathState, attackState, damageState, isGameOver = false, aura;
     public float FindDistance(Transform a, Transform b) {    //Finds the distance between two points a and b
         float distance = Mathf.Sqrt(Mathf.Pow(b.position.x - a.position.x, 2) + Mathf.Pow(b.position.y - a.position.y, 2));
         return distance;
@@ -24,13 +26,13 @@ public class Zombies {   //Zombies class is the parent class. This includes some
             return false;
     }
     public void TransformZombie(Transform Target) {  //Transforms a zombie from current pos to a target pos
-        var maxDist = speed * Time.fixedDeltaTime;
-        maxDist /=  go.transform.parent.GetComponent<Zombie>().ZombieList.Count();
-        if(this.go.transform.position.x < Target.position.x)
+        var maxDist = speed * Time.fixedDeltaTime / human.HumanList.Count();
+        if (this.go.transform.position.x < Target.position.x)
             this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 0f, this.go.transform.eulerAngles.z);
-        if(this.go.transform.position.x > Target.position.x)
+        if (this.go.transform.position.x > Target.position.x)
             this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 180f, this.go.transform.eulerAngles.z);
-        this.go.transform.position = Vector2.MoveTowards(this.go.transform.position, Target.position , maxDist);
+        this.go.transform.position = Vector2.MoveTowards(this.go.transform.position, Target.position, maxDist);
+        
     }
     public void animParams(bool idle, bool walk, bool damage, bool attack, bool death, Animator animator) {
         animator.SetBool("IsIdle", idle);
@@ -53,8 +55,8 @@ public class Zombies {   //Zombies class is the parent class. This includes some
         }
         return focus;
     }
-
     public void Move() {
+
         var humanList = human.HumanList;
         if (humanList.Count == 0)
             StateChanger("idle");
@@ -64,25 +66,33 @@ public class Zombies {   //Zombies class is the parent class. This includes some
                 if (humanTransform != null) {
                     if (this.IsHumanInRange(humanTransform)) {
                         StateChanger("attack");
-                        switch (go.tag) {
-                            case "MainCharacter":
-                                go.transform.parent.GetComponents<AudioSource>()[1].Play();
-                                break;
-                            case "StandartZombie":
-                                go.transform.parent.GetComponents<AudioSource>()[2].Play();
-                                break;
-                            case "TankZombie":
-                                go.transform.parent.GetComponents<AudioSource>()[3].Play();
-                                break;
-                            case "BalyozluZombie":
-                                go.transform.parent.GetComponents<AudioSource>()[4].Play();
-                                break;
-                            case "KargaliZombie":
-                                go.transform.parent.GetComponents<AudioSource>()[5].Play();
-                                break;
-                            default:
-                                break;
+                        if(!go.transform.parent.GetComponents<AudioSource>()[1].isPlaying &&
+                            !go.transform.parent.GetComponents<AudioSource>()[2].isPlaying &&
+                            !go.transform.parent.GetComponents<AudioSource>()[3].isPlaying &&
+                            !go.transform.parent.GetComponents<AudioSource>()[4].isPlaying &&
+                            !go.transform.parent.GetComponents<AudioSource>()[5].isPlaying
+                        ){
+                            switch (go.tag) {
+                                case "MainCharacter":
+                                    go.transform.parent.GetComponents<AudioSource>()[1].Play();
+                                    break;
+                                case "StandartZombie":
+                                    go.transform.parent.GetComponents<AudioSource>()[2].Play();
+                                    break;
+                                case "TankZombie":
+                                    go.transform.parent.GetComponents<AudioSource>()[3].Play();
+                                    break;
+                                case "BalyozluZombie":
+                                    go.transform.parent.GetComponents<AudioSource>()[4].Play();
+                                    break;
+                                case "KargaliZombie":
+                                    go.transform.parent.GetComponents<AudioSource>()[5].Play();
+                                    break;
+                                default:
+                                    break;
+                            }
                         }
+                        
 
                         if (humanTransform.gameObject.tag == "StandartHuman") {
                             humanTransform.gameObject.GetComponent<StandartHuman>().Standart.hp -= (this.attack) / (1 / Time.deltaTime);
@@ -94,22 +104,25 @@ public class Zombies {   //Zombies class is the parent class. This includes some
                             //humanTransform.gameObject.GetComponent<RangedHuman>().transform.parent.GetComponents<AudioSource>()[0].Play();
                         }
                     } else {
-                        if(this.go.tag != "MainCharacter"){
+                        if (this.go.tag != "MainCharacter") {
                             this.TransformZombie(humanTransform);
                             StateChanger("walk");
-                        }
-                        else{
-                            joystickPlayerExample.Move();
-                            if(joystickPlayerExample.fixedJoystick.Direction.x < 0)
+                        } else {
+                            StateChanger("walk");
+                            var maxDist = speed * Time.fixedDeltaTime;
+                            maxDist /= humanList.Count();
+                            joystickPlayerExample.Move(maxDist);
+                            if (joystickPlayerExample.fixedJoystick.Direction.x < 0)
                                 this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 180f, this.go.transform.eulerAngles.z);
-                            else if(joystickPlayerExample.fixedJoystick.Direction.x > 0)
+                            else if (joystickPlayerExample.fixedJoystick.Direction.x > 0)
                                 this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 0f, this.go.transform.eulerAngles.z);
                         }
-                        
+
                     }
                 }
             }
         }
+        AuraEffect();
         CheckDead();
     }
 
@@ -122,6 +135,17 @@ public class Zombies {   //Zombies class is the parent class. This includes some
             return true;
         }
         return false;
+    }
+    public void AuraEffect() {
+        if (this.go.tag != "MainCharacter" && FindDistance(this.go.transform, go.transform.parent.GetChild(0).transform) < 2f && !aura) {
+            this.attack += 3;
+            this.speed += 1;
+            aura = true;
+        } else if (this.go.tag != "MainCharacter" && FindDistance(this.go.transform, go.transform.parent.GetChild(0).transform) >= 2f && aura) {
+            this.attack -= 3;
+            this.speed -= 1;
+            aura = false;
+        }
     }
     public void StateChanger(string state) {
         switch (state) {
@@ -189,7 +213,7 @@ public class Zombies {   //Zombies class is the parent class. This includes some
 
 
 public class Zombie : MonoBehaviour {
-    
+
     [System.Serializable]
     public class Inventory {
         public int count;

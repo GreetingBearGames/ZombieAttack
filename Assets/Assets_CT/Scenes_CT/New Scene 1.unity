@@ -2567,6 +2567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StandartZombie
       objectReference: {fileID: 0}
+    - target: {fileID: 753402045778010031, guid: 44f165def909d30468e3c69ff3138de3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44f165def909d30468e3c69ff3138de3, type: 3}
 --- !u!4 &358225877 stripped
@@ -4227,7 +4231,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555254952}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c87f6c2303f05449eb2d13ec0cbb93c4, type: 3}
@@ -5487,6 +5491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StandartZombie (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 753402045778010031, guid: 44f165def909d30468e3c69ff3138de3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44f165def909d30468e3c69ff3138de3, type: 3}
 --- !u!4 &697004486 stripped
@@ -5922,7 +5930,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812802904}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1d8ab7f070a54eaba165026c6fe86d6, type: 3}
@@ -11610,6 +11618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StandartZombie (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 753402045778010031, guid: 44f165def909d30468e3c69ff3138de3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44f165def909d30468e3c69ff3138de3, type: 3}
 --- !u!4 &1418092631 stripped
@@ -11715,6 +11727,10 @@ PrefabInstance:
       value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7089676384325781535, guid: 593b981175d1aff47953c9b0d31a8569, type: 3}
+      propertyPath: speed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089676384325781535, guid: 593b981175d1aff47953c9b0d31a8569, type: 3}
       propertyPath: mainHP
       value: 
       objectReference: {fileID: 746048595}
@@ -11754,7 +11770,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a37d705c8e9115e439ec799186182634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
   fixedJoystick: {fileID: 1535992053}
 --- !u!64 &1511646023
 MeshCollider:

@@ -28,6 +28,7 @@ public class MainCharacterZombie : MonoBehaviour {
         Main.hp = hp;
         Main.human = GameObject.FindGameObjectWithTag("Human").GetComponent<Human>();   //To access human script;
         Main.StateChanger("idle");
+        Main.screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
     void FixedUpdate() {

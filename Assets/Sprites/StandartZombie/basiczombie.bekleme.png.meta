@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 961
+        width: 962
         height: 1240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: basiczombie.bekleme_1
       rect:
         serializedVersion: 2
-        x: 961
+        x: 962
         y: 0
-        width: 977
+        width: 972
         height: 1240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: basiczombie.bekleme_2
       rect:
         serializedVersion: 2
-        x: 1938
+        x: 1932
         y: 0
-        width: 969
+        width: 972
         height: 1240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: basiczombie.bekleme_3
       rect:
         serializedVersion: 2
-        x: 2905
+        x: 2903
         y: 0
-        width: 974
+        width: 972
         height: 1240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: basiczombie.bekleme_4
       rect:
         serializedVersion: 2
-        x: 3879
+        x: 3874
         y: 0
         width: 972
         height: 1240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: basiczombie.bekleme_5
       rect:
         serializedVersion: 2
-        x: 4851
+        x: 4845
         y: 0
-        width: 966
+        width: 972
         height: 1240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: basiczombie.bekleme_6
       rect:
         serializedVersion: 2
-        x: 5817
+        x: 5816
         y: 0
         width: 972
         height: 1240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: basiczombie.bekleme_7
       rect:
         serializedVersion: 2
-        x: 6789
+        x: 6787
         y: 0
-        width: 980
+        width: 972
         height: 1240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

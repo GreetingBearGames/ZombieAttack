@@ -21,6 +21,7 @@ public class KargaliZombie : MonoBehaviour {
         Kargali.go = go;
         Kargali.tr = tr;
         Kargali.hp = hp;
+        Kargali.aura = false;
         animator.SetBool("IsFly", true);
         animator.SetBool("IsIdle", false);
         animator.SetBool("IsWalk", false);
@@ -29,6 +30,7 @@ public class KargaliZombie : MonoBehaviour {
         animator.SetBool("IsDeath", false);
             //Take Target Position
         Kargali.human = GameObject.FindGameObjectWithTag("Human").GetComponent<Human>();   //To access human script;
+        Kargali.screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
     void FixedUpdate() {
@@ -46,8 +48,8 @@ public class KargaliZombie : MonoBehaviour {
         transform.position = Vector3.MoveTowards(transform.position, Target, Kargali.speed * Time.deltaTime);
     }
     IEnumerator startFly(){
-        Fly(new Vector3(0f,0f,0f));
-        var time = Vector3.Distance(new Vector3(0f,0f,0f), transform.position) / (Kargali.speed * Time.deltaTime);
+        Fly(ClickAndDrag.target);
+        var time = Vector3.Distance(ClickAndDrag.target, transform.position) / (Kargali.speed * Time.deltaTime);
         yield return new WaitForSeconds(time);
         isFlying = false;
     }

@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1572.25
+        width: 1562
         height: 1104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: "insan.tabancal\u0131.hasaralma_1"
       rect:
         serializedVersion: 2
-        x: 1572
+        x: 1562
         y: 0
-        width: 1572.25
+        width: 1572
         height: 1104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: "insan.tabancal\u0131.hasaralma_2"
       rect:
         serializedVersion: 2
-        x: 3144
+        x: 3134
         y: 0
-        width: 1572.25
+        width: 1572
         height: 1104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: "insan.tabancal\u0131.hasaralma_3"
       rect:
         serializedVersion: 2
-        x: 4716
+        x: 4706
         y: 0
-        width: 1572.25
+        width: 1572
         height: 1104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: "insan.tabancal\u0131.hasaralma_4"
       rect:
         serializedVersion: 2
-        x: 6288
+        x: 6278
         y: 0
-        width: 1572.25
+        width: 1572
         height: 1104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: "insan.tabancal\u0131.hasaralma_5"
       rect:
         serializedVersion: 2
-        x: 7860
+        x: 7850
         y: 0
-        width: 1572.25
+        width: 1572
         height: 1104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: "insan.tabancal\u0131.hasaralma_6"
       rect:
         serializedVersion: 2
-        x: 9432
+        x: 9422
         y: 0
-        width: 1572.25
+        width: 1572
         height: 1104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: "insan.tabancal\u0131.hasaralma_7"
       rect:
         serializedVersion: 2
-        x: 11004
+        x: 10996
         y: 0
-        width: 1572.25
+        width: 1572
         height: 1104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

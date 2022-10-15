@@ -9,6 +9,8 @@ public class Humans {
     public ZombiEnvanteri zombiEnvanteri;
     public float speed, defence, attack, range, hp;
     public bool idleState, walkState, deathState, attackState, damageState;
+    public Vector2 screenBounds;
+    public Vector3 viewPos;
     public Transform tr;
     public GameObject go;
     public Zombie zombie;
@@ -28,9 +30,9 @@ public class Humans {
         if(go.tag == "RangedHuman")
             a = Mathf.Sqrt(Mathf.Pow(this.range, 2)/2);
         var maxDist = speed * Time.fixedDeltaTime;
-        var humanCount = go.transform.parent.GetComponent<Human>().HumanList.Count();
-        if(humanCount != 0){
-            maxDist /=  humanCount;
+        var zombieCount = zombie.ZombieList.Count();
+        if(zombieCount != 0){
+            maxDist /=  zombieCount;
             if(this.go.transform.position.x < Target.position.x)
                 this.go.transform.eulerAngles = new Vector3(this.go.transform.eulerAngles.x, 0f, this.go.transform.eulerAngles.z);
             if(this.go.transform.position.x > Target.position.x)
@@ -62,15 +64,19 @@ public class Humans {
                 if (zombieTransform != null) {
                     if (this.IsZombieInRange(zombieTransform)) {
                         StateChanger("attack");
-                        switch (go.tag) {
-                            case "StandartHuman":
-                                go.transform.parent.GetComponents<AudioSource>()[0].Play();
-                                break;
-                            case "RangedHuman":
-                                go.transform.parent.GetComponents<AudioSource>()[1].Play();
-                                break;
-                            default:
-                                break;
+                        if(!go.transform.parent.GetComponents<AudioSource>()[0].isPlaying &&
+                            !go.transform.parent.GetComponents<AudioSource>()[1].isPlaying
+                        ){
+                            switch (go.tag) {
+                                case "StandartHuman":
+                                    go.transform.parent.GetComponents<AudioSource>()[0].Play();
+                                    break;
+                                case "RangedHuman":
+                                    go.transform.parent.GetComponents<AudioSource>()[1].Play();
+                                    break;
+                                default:
+                                    break;
+                            }
                         }
                         var tagg = zombieTransform.gameObject.tag;
                         switch (tagg) {
@@ -153,14 +159,7 @@ public class Humans {
         }
         return false;
     }
-    public bool picker(){
-        var picker = Random.Range(0,4);
-            if(picker == 0)
-                return true;    //ranged
-            else if(picker < 4 && picker > 0)
-                return false;   //std
-        return false;
-    }
+    
     public void StateChanger(string state) {
         switch (state) {
             case "walk":
@@ -208,8 +207,6 @@ public class Humans {
     }
 }
 
-
-
 public static class Utils {
     public static List<GameObject> GetChildren(GameObject go) {
         List<GameObject> list = new List<GameObject>();
@@ -232,9 +229,32 @@ public class Human : MonoBehaviour {
     public GameObject std, ranged;
     public StandartHuman standartHuman;
     public RangedHuman rangedHuman;
+    private void Start(){
+        InvokeRepeating("Creater", 0f , 4f);
+    }
     private void Update() {
         HumanList = Utils.GetChildren(this.gameObject);
-        standartHuman.StandartCreater();
-        rangedHuman.RangedCreater();
+    }
+    void Creater(){
+        var zombieList = GameObject.FindGameObjectWithTag("Zombie").GetComponent<Zombie>().ZombieList;
+        GameObject gop;
+        if(picker()){
+            Vector2 BasePos = new Vector2(7, 0);
+            Vector2 xPos = new Vector2(BasePos.x, Random.Range(BasePos.y - 4, BasePos.y + 4));
+            gop = Instantiate(std, xPos, Quaternion.identity);
+            gop.transform.parent = transform;
+        }
+        else{
+            Vector2 BasePos = new Vector2(7, 0);
+            Vector2 xPos = new Vector2(BasePos.x, Random.Range(BasePos.y - 4, BasePos.y + 4));
+            gop = Instantiate(ranged, xPos, Quaternion.identity);
+            gop.transform.parent = transform;
+        }
+    }
+    public bool picker(){
+        var picker = Random.Range(0,4);
+            if(picker == 0)
+                return true;    //ranged
+        return false;
     }
 }

@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1173
+        width: 1163
         height: 1240
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: tankzombie.bekleme_1
       rect:
         serializedVersion: 2
-        x: 1173
+        x: 1163
         y: 0
         width: 1183
         height: 1240
@@ -161,7 +161,7 @@ TextureImporter:
       name: tankzombie.bekleme_2
       rect:
         serializedVersion: 2
-        x: 2358
+        x: 2348
         y: 1
         width: 1176
         height: 1239
@@ -182,7 +182,7 @@ TextureImporter:
       name: tankzombie.bekleme_3
       rect:
         serializedVersion: 2
-        x: 3534
+        x: 3526
         y: 0
         width: 1174
         height: 1240
@@ -203,7 +203,7 @@ TextureImporter:
       name: tankzombie.bekleme_4
       rect:
         serializedVersion: 2
-        x: 4708
+        x: 4702
         y: 0
         width: 1193
         height: 1240
@@ -224,7 +224,7 @@ TextureImporter:
       name: tankzombie.bekleme_5
       rect:
         serializedVersion: 2
-        x: 5901
+        x: 5893
         y: 0
         width: 1191
         height: 1240

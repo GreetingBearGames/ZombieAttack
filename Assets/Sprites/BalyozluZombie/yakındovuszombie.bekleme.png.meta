@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1358.25
+        width: 1354
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.bekleme_1"
       rect:
         serializedVersion: 2
-        x: 1358
+        x: 1354
         y: 0
-        width: 1358.25
+        width: 1358
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.bekleme_2"
       rect:
         serializedVersion: 2
-        x: 2716
+        x: 2712
         y: 0
-        width: 1358.25
+        width: 1358
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.bekleme_3"
       rect:
         serializedVersion: 2
-        x: 4074
+        x: 4070
         y: 0
-        width: 1358.25
+        width: 1358
         height: 1240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1406
+        width: 1396
         height: 1279
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.bekleme_1"
       rect:
         serializedVersion: 2
-        x: 1407
+        x: 1397
         y: 0
         width: 1407
         height: 1279
@@ -161,7 +161,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.bekleme_2"
       rect:
         serializedVersion: 2
-        x: 2816
+        x: 2806
         y: 0
         width: 1410
         height: 1279
@@ -182,7 +182,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.bekleme_3"
       rect:
         serializedVersion: 2
-        x: 4226
+        x: 4216
         y: 4
         width: 1422
         height: 1275

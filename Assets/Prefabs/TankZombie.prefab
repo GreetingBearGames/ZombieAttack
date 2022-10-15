@@ -52,7 +52,7 @@ MonoBehaviour:
   attack: 3
   defence: 9
   range: 1
-  hp: 45
+  hp: 60
   go: {fileID: 4150108239650602262}
   tr: {fileID: 4150108239650602263}
 --- !u!95 &4150108239650602265

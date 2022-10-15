@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1612.5
+        width: 1608
         height: 1268
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,9 +140,9 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.hasaralma_1"
       rect:
         serializedVersion: 2
-        x: 1612
+        x: 1608
         y: 0
-        width: 1612.5
+        width: 1612
         height: 1268
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -161,9 +161,9 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.hasaralma_2"
       rect:
         serializedVersion: 2
-        x: 3224
+        x: 3220
         y: 0
-        width: 1612.5
+        width: 1612
         height: 1268
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -182,9 +182,9 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.hasaralma_3"
       rect:
         serializedVersion: 2
-        x: 4836
+        x: 4832
         y: 0
-        width: 1612.5
+        width: 1612
         height: 1268
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -203,9 +203,9 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.hasaralma_4"
       rect:
         serializedVersion: 2
-        x: 6448
+        x: 6444
         y: 0
-        width: 1612.5
+        width: 1612
         height: 1268
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -224,9 +224,9 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.hasaralma_5"
       rect:
         serializedVersion: 2
-        x: 8060
+        x: 8056
         y: 0
-        width: 1612.5
+        width: 1612
         height: 1268
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -245,9 +245,9 @@ TextureImporter:
       name: "yak\u0131ndovuszombie.hasaralma_6"
       rect:
         serializedVersion: 2
-        x: 9672
+        x: 9668
         y: 0
-        width: 1612.5
+        width: 1612
         height: 1268
       alignment: 0
       pivot: {x: 0, y: 0}

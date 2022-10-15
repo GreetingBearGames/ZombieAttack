@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 2
-        width: 2216
+        width: 2206
         height: 1258
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.olum_1"
       rect:
         serializedVersion: 2
-        x: 2216
+        x: 2206
         y: 0
         width: 2201
         height: 1260
@@ -161,7 +161,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.olum_2"
       rect:
         serializedVersion: 2
-        x: 4417
+        x: 4407
         y: 0
         width: 2234
         height: 1260
@@ -182,7 +182,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.olum_3"
       rect:
         serializedVersion: 2
-        x: 6648
+        x: 6638
         y: 0
         width: 2236
         height: 1260
@@ -203,7 +203,7 @@ TextureImporter:
       name: "insan.yak\u0131ndovus.olum_4"
       rect:
         serializedVersion: 2
-        x: 8884
+        x: 8874
         y: 0
         width: 2241
         height: 1260

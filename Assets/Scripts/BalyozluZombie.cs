@@ -19,8 +19,10 @@ public class BalyozluZombie : MonoBehaviour {
         Balyozlu.go = go;
         Balyozlu.tr = tr;
         Balyozlu.hp = hp;
+        Balyozlu.aura = false;
         Balyozlu.human = GameObject.FindGameObjectWithTag("Human").GetComponent<Human>();   //To access human script;
         Balyozlu.StateChanger("idle");
+        Balyozlu.screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
     void FixedUpdate() {

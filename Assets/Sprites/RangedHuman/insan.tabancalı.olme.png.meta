@@ -121,7 +121,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2349
+        width: 2339
         height: 1240
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,7 +140,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.olme_1"
       rect:
         serializedVersion: 2
-        x: 2349
+        x: 2339
         y: 0
         width: 2355
         height: 1240
@@ -161,7 +161,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.olme_2"
       rect:
         serializedVersion: 2
-        x: 4704
+        x: 4694
         y: 0
         width: 2357
         height: 1240
@@ -182,7 +182,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.olme_3"
       rect:
         serializedVersion: 2
-        x: 7061
+        x: 7051
         y: 0
         width: 2366
         height: 1240
@@ -203,7 +203,7 @@ TextureImporter:
       name: "insan.tabancal\u0131.olme_4"
       rect:
         serializedVersion: 2
-        x: 9427
+        x: 9417
         y: 3
         width: 2363
         height: 1237

@@ -3261,6 +3261,7 @@ MonoBehaviour:
   zombie: {fileID: 812802904}
   zombidogurmaAlani: {fileID: 747952439}
   envanteriTutanObje: {fileID: 1355918133}
+  zombiResmi: {fileID: 4956304886324740354, guid: 175adc69330cd4fea9fd1552be676abf, type: 3}
 --- !u!114 &464567179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7387,6 +7388,7 @@ MonoBehaviour:
   zombie: {fileID: 812802904}
   zombidogurmaAlani: {fileID: 747952439}
   envanteriTutanObje: {fileID: 1355918133}
+  zombiResmi: {fileID: 4956304886324740354, guid: 03355d9851b804e9bb371fbf14b696f5, type: 3}
 --- !u!114 &900998851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8062,6 +8064,7 @@ MonoBehaviour:
   zombie: {fileID: 812802904}
   zombidogurmaAlani: {fileID: 747952439}
   envanteriTutanObje: {fileID: 1355918133}
+  zombiResmi: {fileID: 4956304886324740354, guid: 874a11c0c7e6a442f87c0f45ed3dac71, type: 3}
 --- !u!114 &966494415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9003,6 +9006,7 @@ MonoBehaviour:
   zombie: {fileID: 0}
   zombidogurmaAlani: {fileID: 747952439}
   envanteriTutanObje: {fileID: 0}
+  zombiResmi: {fileID: 0}
 --- !u!1 &1083090109
 GameObject:
   m_ObjectHideFlags: 0
@@ -11680,11 +11684,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7089676384325781528, guid: 593b981175d1aff47953c9b0d31a8569, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -3.92
       objectReference: {fileID: 0}
     - target: {fileID: 7089676384325781528, guid: 593b981175d1aff47953c9b0d31a8569, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 7089676384325781528, guid: 593b981175d1aff47953c9b0d31a8569, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14293,6 +14297,7 @@ MonoBehaviour:
   zombie: {fileID: 812802904}
   zombidogurmaAlani: {fileID: 747952439}
   envanteriTutanObje: {fileID: 1355918133}
+  zombiResmi: {fileID: 4956304886324740354, guid: 412b22ef256374543ae31db90161e04a, type: 3}
 --- !u!114 &1889047293
 MonoBehaviour:
   m_ObjectHideFlags: 0

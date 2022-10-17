@@ -3261,6 +3261,7 @@ MonoBehaviour:
   zombie: {fileID: 812802904}
   zombidogurmaAlani: {fileID: 747952439}
   envanteriTutanObje: {fileID: 1355918133}
+  zombiResmi: {fileID: 4956304886324740354, guid: 175adc69330cd4fea9fd1552be676abf, type: 3}
 --- !u!114 &464567179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7387,6 +7388,7 @@ MonoBehaviour:
   zombie: {fileID: 812802904}
   zombidogurmaAlani: {fileID: 747952439}
   envanteriTutanObje: {fileID: 1355918133}
+  zombiResmi: {fileID: 4956304886324740354, guid: 03355d9851b804e9bb371fbf14b696f5, type: 3}
 --- !u!114 &900998851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8062,6 +8064,7 @@ MonoBehaviour:
   zombie: {fileID: 812802904}
   zombidogurmaAlani: {fileID: 747952439}
   envanteriTutanObje: {fileID: 1355918133}
+  zombiResmi: {fileID: 4956304886324740354, guid: 874a11c0c7e6a442f87c0f45ed3dac71, type: 3}
 --- !u!114 &966494415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9003,6 +9006,7 @@ MonoBehaviour:
   zombie: {fileID: 0}
   zombidogurmaAlani: {fileID: 747952439}
   envanteriTutanObje: {fileID: 0}
+  zombiResmi: {fileID: 0}
 --- !u!1 &1083090109
 GameObject:
   m_ObjectHideFlags: 0
@@ -12271,6 +12275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -14293,6 +14298,7 @@ MonoBehaviour:
   zombie: {fileID: 812802904}
   zombidogurmaAlani: {fileID: 747952439}
   envanteriTutanObje: {fileID: 1355918133}
+  zombiResmi: {fileID: 4956304886324740354, guid: 412b22ef256374543ae31db90161e04a, type: 3}
 --- !u!114 &1889047293
 MonoBehaviour:
   m_ObjectHideFlags: 0

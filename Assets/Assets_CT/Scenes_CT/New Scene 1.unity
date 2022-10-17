@@ -11684,11 +11684,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7089676384325781528, guid: 593b981175d1aff47953c9b0d31a8569, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -3.92
       objectReference: {fileID: 0}
     - target: {fileID: 7089676384325781528, guid: 593b981175d1aff47953c9b0d31a8569, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 7089676384325781528, guid: 593b981175d1aff47953c9b0d31a8569, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12275,7 +12275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
